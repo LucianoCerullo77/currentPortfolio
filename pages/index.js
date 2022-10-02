@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import Image from 'next/image'
+import ProfilePic2 from '../public/profile2.png'
 
 export default function Home() {
   return (
@@ -11,27 +13,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10'>
+      <main className='bg-white px-8'>
         <section className=' min-h-screen '>
-        <nav className='py-10 mb-12 flex justify-between'>
+        <nav className='py-10 mb-2  flex justify-between'>
           <h1 className='text-xl'>Developed by : </h1>
           <ul className='flex items-center'>
             <li>
-              <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>  
+              <BsFillMoonStarsFill className='cursor-pointer text-2xl hover:animate-pulse'/>  
             </li>
             <li>
-              <a className=' shadow-xl bg-gradient-to-r from-red-500 to-rose-600 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a>
+              <a className=' shadow-xl bg-gradient-to-r from-red-500 to-rose-600 text-white px-4 py-2 rounded-md ml-8 hover:animate-pulse' href='#'>Resume</a>
             </li>
           </ul>
         </nav>
-        <div>
-          <h2>Luciano Cerullo</h2>
-          <h3>FrontEnd ReactJs Developer</h3>
-          <p>Freelancer looking for better oportunities. Based in Argentina!🌎</p>
+        <div className='text-center p-8'>
+          <h2 className='text-red-600 text-5xl font-medium py-2'>Luciano Cerullo</h2>
+          <h3 className='text-2xl py-2'>FrontEnd ReactJs Developer</h3>
+          <p className='text-md py-2 leading-8 text-gray-800'>Freelancer looking for better oportunities, based in Argentina!🌎</p>
         </div>
-        <div className='flex'>
+        <div className='flex text-3xl justify-center gap-16 py-4'>
         <AiFillLinkedin/>
         <AiFillGithub/>
+        </div>
+        <div className=' relative rounded-full mx-auto h-80 w-80 mt-20 bg-gradient-to-b from-red-600 overflow-hidden'>
+        <Image src={ProfilePic2} layout="fill" objectFit='cover' className='rounded-full'/>
         </div>
         </section>
       </main>
