@@ -2,7 +2,13 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image'
-import ProfilePic2 from '../public/profile2.png'
+import ProfilePic from '../public/profile.png'
+import Fennex from '../public/Fennex.png'
+import Fennex2 from '../public/Fennex2.png'
+import Olivia from '../public/Olivia1.png'
+import Olivia2 from '../public/Olivia2.png'
+import Lolo from '../public/Lolo1.png'
+import Lolo2 from '../public/Lolo2.png'
 
 export default function Home() {
   return (
@@ -29,14 +35,70 @@ export default function Home() {
         <div className='text-center p-8'>
           <h2 className='text-red-600 text-5xl font-medium py-2'>Luciano Cerullo</h2>
           <h3 className='text-2xl py-2'>FrontEnd ReactJs Developer</h3>
-          <p className='text-md py-2 leading-8 text-gray-800'>Freelancer looking for better oportunities, based in Argentina!🌎</p>
+          <p className='text-md py-2 leading-8 text-gray-800'>Freelancer looking for better oportunities, based in Argentina!🌎.</p>
         </div>
         <div className='flex text-3xl justify-center gap-16 py-4'>
         <AiFillLinkedin/>
         <AiFillGithub/>
         </div>
         <div className=' relative rounded-full mx-auto h-80 w-80 mt-20 bg-gradient-to-b from-red-600 overflow-hidden'>
-        <Image src={ProfilePic2} layout="fill" objectFit='cover' className='rounded-full'/>
+        <Image src={ProfilePic} layout="fill" objectFit='cover' className='rounded-full'/>
+        </div>
+        </section>
+
+        <section>
+
+        <div>
+          <h3 className='text-2xl text-center py-2'>My Experience</h3>
+          <p className='text-md py-2
+           leading-8 text-gray-800'>
+            Most of my Freelance Jobs were given from
+            <span className='text-yellow-500 font-medium'> CoderHouse </span>
+            (A Programming Institute were I've learned about Programming for the first time).
+            This is because I was in the <span className='font-medium'>Top 10%</span> of students
+            and I was able to ask for my reward of being able to participate
+            with a team in a real freelance job 
+            (<span className='font-medium'>Twice!</span>).
+            <br/>
+            This is some of my Projects: </p>
+        </div>
+        <div>
+          <div>
+            <Image src={Olivia}/>
+            <Image src={Olivia2}/>
+            <h3 className='text-3xl text-center'>Sweet Olivia E-Commerce</h3>
+            <p>This is another Freelance Job maded with ReactJs using Bootstrap and also
+            it was maded with a Team of 2 UX Designers and Another ReactJs FrontEnd Developer.</p>
+            <h4 className='py-4 text-red-600 text-center text-2xl'>Projects maded With : </h4>
+            <p className='text-gray-600 py-1'>HTML5</p>
+            <p className='text-gray-600 py-1'>CSS3</p>
+            <p className='text-gray-600 py-1'>JavaScript</p>
+            <p className='text-gray-600 py-1'>ReactJs</p>
+            <p className='text-gray-600 py-1'>Bootstrap</p>
+          </div>
+          <div>
+            <Image src={Fennex}/>
+            <Image src={Fennex2}/>
+            <h3 className='text-3xl text-center'>Fennex E-Commerce</h3>
+            <p>My final project of the ReactJs Course. Using Hooks, styled Componets and Bootstrap.</p>
+            <h4 className='py-4 text-red-600 text-center text-2xl'>Projects maded With : </h4>
+            <p className='text-gray-600 py-1'>HTML5</p>
+            <p className='text-gray-600 py-1'>CSS3</p>
+            <p className='text-gray-600 py-1'>JavaScript</p>
+            <p className='text-gray-600 py-1'>ReactJs</p>
+            <p className='text-gray-600 py-1'>Bootstrap</p>
+          </div>
+          <div>
+            <Image src={Lolo}/>
+            <Image src={Lolo2} />
+            <h3 className='text-3xl text-center'>Lolo Store Landing Page</h3>
+            <p>My First Freelance Landing page maded with a team of
+            1 Designer UX and another Web Developer. </p>
+            <h4 className='py-4 text-red-600 text-center text-2xl'>Projects maded With : </h4>
+            <p className='text-gray-600 py-1'>HTML5</p>
+            <p className='text-gray-600 py-1'>CSS3</p>
+            <p className='text-gray-600 py-1'>Bootstrap</p>
+          </div>
         </div>
         </section>
       </main>
