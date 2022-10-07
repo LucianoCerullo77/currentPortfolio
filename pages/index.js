@@ -50,7 +50,7 @@ export default function Home() {
 
         <div>
           <h3 className='text-2xl text-center py-2'>My Experience</h3>
-          <p className='text-md py-2
+          <p className='text-md text-center py-2
            leading-8 text-gray-800'>
             Most of my Freelance Jobs were given from
             <span className='text-yellow-500 font-medium'> CoderHouse </span>
@@ -58,43 +58,43 @@ export default function Home() {
             This is because I was in the <span className='font-medium'>Top 10%</span> of students
             and I was able to ask for my reward of being able to participate
             with a team in a real freelance job 
-            (<span className='font-medium'>Twice!</span>).
-            <br/>
-            This is some of my Projects: </p>
+            (<span className='font-medium'>Twice!</span>).</p>
+            <p className='text-center text-xl'>This is some of my Projects : </p>
         </div>
-        <div>
-          <div>
+        <div className='lg:grid grid-cols-3 gap-6'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
             <Image src={Olivia}/>
             <Image src={Olivia2}/>
-            <h3 className='text-3xl text-center'>Sweet Olivia E-Commerce</h3>
-            <p>This is another Freelance Job maded with ReactJs using Bootstrap and also
+            <h3 className='text-2xl font-medium pt-8 pb-2'>Sweet Olivia E-Commerce</h3>
+            <p className='py-2'>This is another Freelance Job maded with ReactJs using Bootstrap and also
             it was maded with a Team of 2 UX Designers and Another ReactJs FrontEnd Developer.</p>
-            <h4 className='py-4 text-red-600 text-center text-2xl'>Projects maded With : </h4>
+            <h4 className='py-4 text-red-600 text-2xl'>Projects maded With : </h4>
             <p className='text-gray-600 py-1'>HTML5</p>
             <p className='text-gray-600 py-1'>CSS3</p>
             <p className='text-gray-600 py-1'>JavaScript</p>
             <p className='text-gray-600 py-1'>ReactJs</p>
             <p className='text-gray-600 py-1'>Bootstrap</p>
           </div>
-          <div>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10'>
             <Image src={Fennex}/>
             <Image src={Fennex2}/>
-            <h3 className='text-3xl text-center'>Fennex E-Commerce</h3>
-            <p>My final project of the ReactJs Course. Using Hooks, styled Componets and Bootstrap.</p>
-            <h4 className='py-4 text-red-600 text-center text-2xl'>Projects maded With : </h4>
+            <h3 className='text-2xl font-medium pt-8 pb-2'>Fennex E-Commerce</h3>
+            <p className='py-2'>My final project of the ReactJs Course. Using Hooks, styled Componets, Firebase and Bootstrap.
+            It´s a E-commerce with all his functions</p>
+            <h4 className='py-4 text-red-600 text-2xl'>Projects maded With : </h4>
             <p className='text-gray-600 py-1'>HTML5</p>
             <p className='text-gray-600 py-1'>CSS3</p>
             <p className='text-gray-600 py-1'>JavaScript</p>
             <p className='text-gray-600 py-1'>ReactJs</p>
             <p className='text-gray-600 py-1'>Bootstrap</p>
           </div>
-          <div>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10'>
             <Image src={Lolo}/>
             <Image src={Lolo2} />
-            <h3 className='text-3xl text-center'>Lolo Store Landing Page</h3>
-            <p>My First Freelance Landing page maded with a team of
-            1 Designer UX and another Web Developer. </p>
-            <h4 className='py-4 text-red-600 text-center text-2xl'>Projects maded With : </h4>
+            <h3 className='text-2xl font-medium pt-8 pb-2'>Lolo Store Landing Page</h3>
+            <p className='py-2'>My First Freelance Landing page maded with a team of
+            1 Designer UX and another Web Developer. Using basic HTML and CSS, also we use Bootstrap. </p>
+            <h4 className='py-4 text-red-600 text-2xl'>Projects maded With : </h4>
             <p className='text-gray-600 py-1'>HTML5</p>
             <p className='text-gray-600 py-1'>CSS3</p>
             <p className='text-gray-600 py-1'>Bootstrap</p>
