@@ -9,6 +9,10 @@ import Olivia from '../public/Olivia1.png'
 import Olivia2 from '../public/Olivia2.png'
 import Lolo from '../public/Lolo1.png'
 import Lolo2 from '../public/Lolo2.png'
+import Contact from '../public/contact.png'
+import WebDev from "../public/html.png"
+import Front from "../public/front.png"
+import Ecommerce from "../public/ecommerce.png"
 
 export default function Home() {
   return (
@@ -28,13 +32,13 @@ export default function Home() {
               <BsFillMoonStarsFill className='cursor-pointer text-2xl hover:animate-pulse'/>  
             </li>
             <li>
-              <a className=' shadow-xl bg-gradient-to-r from-red-500 to-rose-600 text-white px-4 py-2 rounded-md ml-8 hover:animate-pulse' href='#'>Resume</a>
+              <a className='shadow-xl bg-gradient-to-r from-red-500 to-rose-600 text-white px-4 py-2 rounded-md ml-8 hover:animate-pulse' href='#'>Resume</a>
             </li>
           </ul>
         </nav>
         <div className='text-center p-8'>
           <h2 className='text-red-600 text-5xl font-medium py-2'>Luciano Cerullo</h2>
-          <h3 className='text-2xl py-2'>FrontEnd ReactJs Developer</h3>
+          <h3 className='text-3xl py-2'>FrontEnd ReactJs Developer</h3>
           <p className='text-md py-2 leading-8 text-gray-800'>Freelancer looking for better oportunities, based in Argentina!🌎.</p>
         </div>
         <div className='flex text-3xl justify-center gap-16 py-4'>
@@ -45,11 +49,9 @@ export default function Home() {
         <Image src={ProfilePic} layout="fill" objectFit='cover' className='rounded-full'/>
         </div>
         </section>
-
         <section>
-
         <div>
-          <h3 className='text-2xl text-center py-2'>My Experience</h3>
+          <h3 className='text-3xl text-center py-2'>My Portfolio</h3>
           <p className='text-md text-center py-2
            leading-8 text-gray-800'>
             Most of my Freelance Jobs were given from
@@ -61,7 +63,7 @@ export default function Home() {
             (<span className='font-medium'>Twice!</span>).</p>
             <p className='text-center text-xl'>This is some of my Projects : </p>
         </div>
-        <div className='lg:grid grid-cols-3 gap-6'>
+        <div className='sm:grid grid-cols-3 gap-6'>
           <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
             <Image src={Olivia}/>
             <Image src={Olivia2}/>
@@ -100,6 +102,49 @@ export default function Home() {
             <p className='text-gray-600 py-1'>Bootstrap</p>
           </div>
         </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl text-center py-2'>Services I Offer</h3>
+            <p className='py-2 text-center'>This are the Technologies that I've Learned, most of them were used
+            in Real Projects. </p>
+            <div className='sm:grid grid-cols-3 gap-6 md:grid-cols-3'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+            <Image src={Front}/>
+            <h3 className='text-2xl font-medium pt-8 pb-2'>FrontEnd Web Development</h3>
+            <h4 className='py-4 text-red-600 text-2xl'>Technologies I use : </h4>
+            <p className='text-gray-600 py-1'>HTML5</p>
+            <p className='text-gray-600 py-1'>CSS3</p>
+            <p className='text-gray-600 py-1'>JavaScript</p>
+            <p className='text-gray-600 py-1'>ReactJs</p>
+            <p className='text-gray-600 py-1'>Bootstrap</p>
+            <p className='text-gray-600 py-1'>Tailwind</p>
+            <p className='text-gray-600 py-1'>Git</p>
+            <p className='text-gray-600 py-1'>Github</p>
+          </div>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+            <Image src={Ecommerce}/>
+            <h3 className='text-2xl font-medium pt-8 pb-2'>E-commerce Aplications</h3>
+            <h4 className='py-4 text-red-600 text-2xl'>Technologies I use : </h4>
+            <p className='text-gray-600 py-1'>HTML5</p>
+            <p className='text-gray-600 py-1'>CSS3</p>
+            <p className='text-gray-600 py-1'>JavaScript</p>
+            <p className='text-gray-600 py-1'>ReactJs</p>
+            <p className='text-gray-600 py-1'>Bootstrap</p>
+            <p className='text-gray-600 py-1'>Tailwind</p>
+            <p className='text-gray-600 py-1'>Git</p>
+            <p className='text-gray-600 py-1'>Github</p>
+          </div>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+            <Image src={WebDev}/>
+            <h3 className='text-2xl font-medium pt-8 pb-2'>Custom Web Aplications</h3>
+            <h4 className='py-4 text-red-600 text-2xl'>Technologies I use : </h4>
+            <p className='text-gray-600 py-1'>HTML5</p>
+            <p className='text-gray-600 py-1'>CSS3</p>
+            <p className='text-gray-600 py-1'>Bootstrap</p>
+          </div>
+        </div>
+          </div>
         </section>
       </main>
     </div>
