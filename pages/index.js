@@ -28,138 +28,318 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-8 md:px-20 lg:px-40 dark:bg-gray-900'>
-        <section className=' min-h-screen '>
-        <nav className='py-10 mb-2  flex justify-between'>
-          <h1 className='text-xl dark:text-gray-200'>Developed by :  </h1>
-          <ul className='flex items-center'>
-            <li>
-              <BsFillMoonStarsFill className='cursor-pointer text-2xl hover:animate-pulse'
-                onClick={() => setDarkMode(!darkMode)}
-              />  
-            </li>
-            <li>
-              <a className='shadow-xl bg-gradient-to-r from-red-500 to-rose-600 
-              text-white px-4 py-2 rounded-md ml-8 hover:animate-pulse' href='../public/ResumeLucianoCerullo.pdf' download>Resume</a>
-            </li>
-          </ul>
-        </nav>
-        <div className='text-center p-8'>
-          <h2 className='text-red-600 text-5xl font-medium py-2 md:text-6xl'>Luciano Cerullo</h2>
-          <h3 className='text-3xl py-2 md:text-4xl dark:text-gray-200'>FrontEnd ReactJs Developer</h3>
-          <p className='text-md py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-400'>Freelancer looking for better oportunities, based in Argentina!🌎.</p>
-        </div>
-        <div className='flex text-3xl justify-center gap-16 py-4'>
-        <AiFillLinkedin className='dark:text-white md:text-6xl'/>
-        <AiFillGithub className='dark:text-white md:text-6xl'/>
-        </div>
-        <div className='relative rounded-full mx-auto h-60 w-60 my-10
+      <main className="bg-white px-8 md:px-20 lg:px-40 dark:bg-gray-900">
+        <section className=" min-h-screen ">
+          <nav className="py-10 mb-2  flex justify-between">
+            <h1 className="text-xl dark:text-gray-200">Developed by : </h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill
+                  className="cursor-pointer text-2xl hover:animate-pulse dark:text-gray-200"
+                  onClick={() => setDarkMode(!darkMode)}
+                />
+              </li>
+              <li>
+                <a
+                  className="shadow-xl bg-gradient-to-r from-red-500 to-rose-600 
+              text-white px-4 py-2 rounded-md ml-8 hover:animate-pulse"
+                  href="../public/ResumeLucianoCerullo.pdf"
+                  download
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className="text-center p-8">
+            <h2 className="text-red-600 text-5xl font-medium py-2 md:text-6xl">
+              Luciano Cerullo
+            </h2>
+            <h3 className="text-3xl py-2 md:text-4xl dark:text-gray-200">
+              FrontEnd ReactJs Developer
+            </h3>
+            <p className="text-md py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
+              Freelancer looking for better oportunities, based in Argentina!🌎.
+            </p>
+          </div>
+          <div className="flex text-3xl justify-center gap-16 py-4">
+            <AiFillLinkedin className="dark:text-white md:text-6xl" />
+            <AiFillGithub className="dark:text-white md:text-6xl" />
+          </div>
+          <div
+            className="relative rounded-full mx-auto h-60 w-60 my-10
          bg-gradient-to-b from-red-600 overflow-hidden
-         md:h-96 md:w-96'>
-        <Image src={ProfilePic} layout="fill" objectFit='cover' className='rounded-full'/>
-        </div>
+         md:h-96 md:w-96"
+          >
+            <Image
+              src={ProfilePic}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+            />
+          </div>
         </section>
-        {/* <section>
-        <div>
-          <h3>About Me</h3>
-          <p>I'm </p>
-        </div>
-        </section> */}
         <section>
           <div>
-            <h3 className='text-3xl text-center py-2'>Services I Offer</h3>
-            <p className='py-2 text-center'>This are the Technologies that I've Learned, most of them were used
-            in Real Projects. </p>
-            <div className='sm:grid grid-cols-3 gap-10'>
-          <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
-            <Image src={Front}/>
-            <h3 className='text-2xl font-medium pt-8 pb-2'>FrontEnd Web Development</h3>
-            <p className='py-2'>I've learned about FrontEnd Web Development in the last year using HTML, CSS, JavaScript and ReactJs.</p>
-            <h4 className='py-4 text-red-600 text-2xl'>Technologies I use : </h4>
-            <p className='text-gray-600 py-1'>HTML5</p>
-            <p className='text-gray-600 py-1'>CSS3</p>
-            <p className='text-gray-600 py-1'>JavaScript</p>
-            <p className='text-gray-600 py-1'>ReactJs</p>
-            <p className='text-gray-600 py-1'>Bootstrap</p>
-            <p className='text-gray-600 py-1'>Tailwind</p>
-            <p className='text-gray-600 py-1'>Git</p>
-            <p className='text-gray-600 py-1'>Github</p>
-          </div>
-          <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
-            <Image src={Ecommerce}/>
-            <h3 className='text-2xl font-medium pt-8 pb-2'>E-commerce Websites</h3>
-            <p className='py-2'>I've design many E-commerce's with many Technologies.</p>
-            <h4 className='py-4 text-red-600 text-2xl'>Technologies I use : </h4>
-            <p className='text-gray-600 py-1'>HTML5</p>
-            <p className='text-gray-600 py-1'>CSS3</p>
-            <p className='text-gray-600 py-1'>JavaScript</p>
-            <p className='text-gray-600 py-1'>ReactJs</p>
-            <p className='text-gray-600 py-1'>Bootstrap</p>
-            <p className='text-gray-600 py-1'>Tailwind</p>
-            <p className='text-gray-600 py-1'>Git</p>
-            <p className='text-gray-600 py-1'>Github</p>
-            <p className='text-gray-600 py-1'>Firebase</p>
-          </div>
-          <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
-            <Image src={WebDev}/>
-            <h3 className='text-2xl font-medium pt-8 pb-2'>Custom WebSites</h3>
-            <p className='py-2'>I can make simple WebSites using HTML and CSS.</p>
-            <h4 className='py-4 text-red-600 text-2xl'>Technologies I use : </h4>
-            <p className='text-gray-600 py-1'>HTML5</p>
-            <p className='text-gray-600 py-1'>CSS3</p>
-            <p className='text-gray-600 py-1'>Bootstrap</p>
-          </div>
-        </div>
+            <h3 className="text-3xl text-center py-4 md:text-4xl dark:text-gray-200">
+              About Me
+            </h3>
+            <p className="text-md py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
+              I am a FrontEnd ReactJs Developer based in Argentina. I have a
+              passion for learning new technologies and I am always looking for
+              new opportunities. I've started learning about web development 1
+              year ago and now im looking for a Job as FrontEnd Developer.
+              <br />
+            </p>
           </div>
         </section>
         <section>
-        <div>
-          <h3 className='text-3xl text-center py-2'>My Portfolio</h3>
-          <p className='text-md text-center py-2
-           leading-8 text-gray-800'>
-            Most of my Freelance Jobs were given from
-            <span className='text-yellow-500 font-medium'> CoderHouse </span>
-            (A Programming Institute were I've learned about Programming for the first time).
-            This is because I was in the <span className='font-medium'>Top 10%</span> of students
-            and I was able to ask for my reward of being able to participate
-            with a team in a real freelance job 
-            (<span className='font-medium'>Twice!</span>).</p>
-            <p className='text-center text-xl'>This is some of my Projects : </p>
-        </div>
-        <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-          <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={Olivia}></Image>
-          <h3 className='text-2xl font-medium pt-8 pb-2'>Sweet Olivia E-Commerce</h3>
-            <p className='py-2'>This is another Freelance Job maded with ReactJs using Bootstrap and also
-            it was maded with a Team of 2 UX Designers and Another ReactJs FrontEnd Developer.</p></div>
-          <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={Olivia2}></Image>
-          <h3 className='text-2xl font-medum pt-8 pb2 text-red-600'>Projects maded With : </h3>
-            <p className='text-gray-600 py-1'>HTML5</p>
-            <p className='text-gray-600 py-1'>CSS3</p>
-            <p className='text-gray-600 py-1'>JavaScript</p>
-            <p className='text-gray-600 py-1'>ReactJs</p>
-            <p className='text-gray-600 py-1'>Bootstrap</p></div>
-          <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={Fennex}></Image>
-          <h3 className='text-2xl font-medium pt-8 pb-2'>Fennex E-Commerce</h3>
-            <p className='py-2'>My final project of the ReactJs Course. Using Hooks, styled Componets, Firebase and Bootstrap.
-            It´s a E-commerce with all his functions</p></div>
-          <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={Fennex2}></Image>
-          <h4 className='py-4 text-red-600 text-2xl'>Projects maded With : </h4>
-            <p className='text-gray-600 py-1'>HTML5</p>
-            <p className='text-gray-600 py-1'>CSS3</p>
-            <p className='text-gray-600 py-1'>JavaScript</p>
-            <p className='text-gray-600 py-1'>ReactJs</p>
-            <p className='text-gray-600 py-1'>Bootstrap</p></div>
-          <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={Lolo}></Image>
-          <h3 className='text-2xl font-medium pt-8 pb-2'>Lolo Store Landing Page</h3>
-            <p className='py-2'>My First Freelance Landing page maded with a team of
-            1 Designer UX and another Web Developer. Using basic HTML and CSS, also we use Bootstrap. </p></div>
-          <div className='basis-1/3 flex-1'><Image target='_black' className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={Lolo2}></Image>
-          <h4 className='py-4 text-red-600 text-2xl'>Projects maded With : </h4>
-            <p className='text-gray-600 py-1'>HTML5</p>
-            <p className='text-gray-600 py-1'>CSS3</p>
-            <p className='text-gray-600 py-1'>Bootstrap</p></div>
-        </div>
+          <div>
+            <h3 className="text-3xl text-center py-2 dark:text-gray-200">
+              Services I Offer
+            </h3>
+            <p className="py-2 text-center dark:text-gray-300">
+              This are the Technologies that I've Learned, most of them were
+              used in Real Projects.{" "}
+            </p>
+            <div className="sm:grid grid-cols-3 gap-10">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+                <Image src={Front} />
+                <h3 className="text-2xl font-medium pt-8 pb-2">
+                  FrontEnd Web Development
+                </h3>
+                <p className="py-2">
+                  I've learned about FrontEnd Web Development in the last year
+                  using HTML, CSS, JavaScript and ReactJs.
+                </p>
+                <h4 className="py-4 text-red-600 text-2xl">
+                  Technologies I use :{" "}
+                </h4>
+                <p className="text-gray-600 py-1">HTML5</p>
+                <p className="text-gray-600 py-1">CSS3</p>
+                <p className="text-gray-600 py-1">JavaScript</p>
+                <p className="text-gray-600 py-1">ReactJs</p>
+                <p className="text-gray-600 py-1">Bootstrap</p>
+                <p className="text-gray-600 py-1">Tailwind</p>
+                <p className="text-gray-600 py-1">Git</p>
+                <p className="text-gray-600 py-1">Github</p>
+              </div>
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+                <Image src={Ecommerce} />
+                <h3 className="text-2xl font-medium pt-8 pb-2">
+                  E-commerce Websites
+                </h3>
+                <p className="py-2">
+                  I've design many E-commerce's with many Technologies.
+                </p>
+                <h4 className="py-4 text-red-600 text-2xl">
+                  Technologies I use :{" "}
+                </h4>
+                <p className="text-gray-600 py-1">HTML5</p>
+                <p className="text-gray-600 py-1">CSS3</p>
+                <p className="text-gray-600 py-1">JavaScript</p>
+                <p className="text-gray-600 py-1">ReactJs</p>
+                <p className="text-gray-600 py-1">Bootstrap</p>
+                <p className="text-gray-600 py-1">Tailwind</p>
+                <p className="text-gray-600 py-1">Git</p>
+                <p className="text-gray-600 py-1">Github</p>
+                <p className="text-gray-600 py-1">Firebase</p>
+              </div>
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+                <Image src={WebDev} />
+                <h3 className="text-2xl font-medium pt-8 pb-2">
+                  Custom WebSites
+                </h3>
+                <p className="py-2">
+                  I can make simple WebSites using HTML and CSS.
+                </p>
+                <h4 className="py-4 text-red-600 text-2xl">
+                  Technologies I use :{" "}
+                </h4>
+                <p className="text-gray-600 py-1">HTML5</p>
+                <p className="text-gray-600 py-1">CSS3</p>
+                <p className="text-gray-600 py-1">Bootstrap</p>
+              </div>
+            </div>
+          </div>
         </section>
+        <section>
+          <div>
+            <h3 className="text-3xl text-center py-2 dark:text-gray-200">
+              My Portfolio
+            </h3>
+            <p
+              className="text-md text-center py-2
+           leading-8 text-gray-800 dark:text-white"
+            >
+              Most of my Freelance Jobs were given from
+              <span className="text-yellow-500 font-medium"> CoderHouse </span>
+              (A Programming Institute were I've learned about Programming for
+              the first time). This is because I was in the{" "}
+              <span className="font-medium">Top 10%</span> of students and I was
+              able to ask for my reward of being able to participate with a team
+              in a real freelance job (
+              <span className="font-medium">Twice!</span>).
+            </p>
+            <p className="text-center text-xl dark:text-gray-300">
+              This is some of my Projects :{" "}
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-center">
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={Olivia}
+              ></Image>
+              <h3 className="text-2xl font-medium pt-8 pb-2">
+                Sweet Olivia E-Commerce
+              </h3>
+              <p className="py-2">
+                This is another Freelance Job maded with ReactJs using Bootstrap
+                and also it was maded with a Team of 2 UX Designers and Another
+                ReactJs FrontEnd Developer.
+              </p>
+            </div>
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={Olivia2}
+              ></Image>
+              <h3 className="text-2xl font-medum pt-8 pb2 text-red-600">
+                Projects maded With :{" "}
+              </h3>
+              <p className="text-gray-600 py-1">HTML5</p>
+              <p className="text-gray-600 py-1">CSS3</p>
+              <p className="text-gray-600 py-1">JavaScript</p>
+              <p className="text-gray-600 py-1">ReactJs</p>
+              <p className="text-gray-600 py-1">Bootstrap</p>
+            </div>
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={Fennex}
+              ></Image>
+              <h3 className="text-2xl font-medium pt-8 pb-2">
+                Fennex E-Commerce
+              </h3>
+              <p className="py-2">
+                My final project of the ReactJs Course. Using Hooks, styled
+                Componets, Firebase and Bootstrap. It´s a E-commerce with all
+                his functions
+              </p>
+            </div>
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={Fennex2}
+              ></Image>
+              <h4 className="py-4 text-red-600 text-2xl">
+                Projects maded With :{" "}
+              </h4>
+              <p className="text-gray-600 py-1">HTML5</p>
+              <p className="text-gray-600 py-1">CSS3</p>
+              <p className="text-gray-600 py-1">JavaScript</p>
+              <p className="text-gray-600 py-1">ReactJs</p>
+              <p className="text-gray-600 py-1">Bootstrap</p>
+            </div>
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={Lolo}
+              ></Image>
+              <h3 className="text-2xl font-medium pt-8 pb-2">
+                Lolo Store Landing Page
+              </h3>
+              <p className="py-2">
+                My First Freelance Landing page maded with a team of 1 Designer
+                UX and another Web Developer. Using basic HTML and CSS, also we
+                use Bootstrap.{" "}
+              </p>
+            </div>
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+              <Image
+                target="_black"
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={Lolo2}
+              ></Image>
+              <h4 className="py-4 text-red-600 text-2xl">
+                Projects maded With :{" "}
+              </h4>
+              <p className="text-gray-600 py-1">HTML5</p>
+              <p className="text-gray-600 py-1">CSS3</p>
+              <p className="text-gray-600 py-1">Bootstrap</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3 className="text-3xl text-center py-2 dark:text-gray-200">
+            Contact Me
+          </h3>
+          <div className='relative rounded-full mx-auto h-60 w-60 my-10
+         bg-gradient-to-b overflow-hidden
+         md:h-96 md:w-96'>
+          <Image src={Contact}
+          layout="fill"
+          objectFit="cover"
+          className="rounded-full"
+          />
+          </div>
+          <p className="py-2 text-center dark:text-gray-300">
+            If you want to contact me, you can find me on
+            <span>
+              <a
+                className="font-medium text-blue-500"
+                href="https://www.linkedin.com/in/lucianocerullo77/"
+                target="_blank"
+              >
+                {" "}
+                LinkedIn
+              </a>
+            </span>
+            .
+            <br />
+            Send me an email at :
+            <span className="font-medium text-red-500">
+              {" "}
+              lucianonicolas10@gmail.com
+            </span>
+            <br />
+            Or you can find me on
+            <span>
+              <a
+              target="_blank"
+              className="font-medium text-gray-600"
+              href="https://github.com/LucianoCerullo77"
+              > Github</a>
+            </span>.
+            Thank you!
+          </p>
+        </section>
+        <footer>
+          <div className="text-center sticky py-8 dark:text-gray-300">
+            <p >
+              Luciano Cerullo - FrontEnd Developer
+            </p>
+          </div>
+        </footer>
       </main>
     </div>
   );
