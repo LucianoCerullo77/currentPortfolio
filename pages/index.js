@@ -52,13 +52,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-8">
-            <h2 className="text-red-600 text-5xl font-medium py-2 md:text-6xl">
+            <h2 className="text-red-600 text-5xl font-medium py-2 md:text-6xl animate-in slide-in-from-top-24 duration-1000 hover:animate-pulse">
               Luciano Cerullo
             </h2>
-            <h3 className="text-3xl py-2 md:text-4xl dark:text-gray-200">
+            <h3 className="text-3xl py-2 md:text-4xl dark:text-gray-200 animate-in slide-in-from-left-24 duration-1000 hover:animate-pulse">
               FrontEnd ReactJs Developer
             </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
+            <p className="text-md py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300 animate-in slide-in-from-right-24 duration-1000 delay-750 hover:animate-pulse">
               Freelancer looking for better oportunities, based in Argentina!🌎.
             </p>
           </div>
