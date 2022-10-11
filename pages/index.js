@@ -1,24 +1,23 @@
-import Head from 'next/head';
-import { useState } from 'react';
-import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
-import Image from 'next/image'
-import ProfilePic from '../public/profile.png'
-import Fennex from '../public/Fennex.png'
-import Fennex2 from '../public/Fennex2.png'
-import Olivia from '../public/Olivia1.png'
-import Olivia2 from '../public/Olivia2.png'
-import Lolo from '../public/Lolo1.png'
-import Lolo2 from '../public/Lolo2.png'
-import Contact from '../public/contact.png'
-import WebDev from "../public/html.png"
-import Front from "../public/front.png"
-import Ecommerce from "../public/ecommerce.png"
-
+import Head from "next/head";
+import { useState } from "react";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { HiOutlineMail } from "react-icons/hi";
+import Image from "next/image";
+import ProfilePic from "../public/profile.png";
+import Fennex from "../public/Fennex.png";
+import Fennex2 from "../public/Fennex2.png";
+import Olivia from "../public/Olivia1.png";
+import Olivia2 from "../public/Olivia2.png";
+import Lolo from "../public/Lolo1.png";
+import Lolo2 from "../public/Lolo2.png";
+import Contact from "../public/contact.png";
+import WebDev from "../public/html.png";
+import Front from "../public/front.png";
+import Ecommerce from "../public/ecommerce.png";
 
 export default function Home() {
-
-  const [darkMode,setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -29,7 +28,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-8 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className=" min-h-screen ">
+        <section className="min-h-screen">
           <nav className="py-10 mb-2  flex justify-between">
             <h1 className="text-xl dark:text-gray-200">Developed by : </h1>
             <ul className="flex items-center">
@@ -41,12 +40,15 @@ export default function Home() {
               </li>
               <li>
                 <a
+                  href="/LucianoCerulloResume.pdf"
+                  alt='resume'
+                  rel="noopener noreferrer"
+                  locale={false}
+                  download
                   className="shadow-xl bg-gradient-to-r from-red-500 to-rose-600 
               text-white px-4 py-2 rounded-md ml-8 hover:animate-pulse"
-                  href="../public/ResumeLucianoCerullo.pdf"
-                  download
                 >
-                  Resume
+                  My Resume
                 </a>
               </li>
             </ul>
@@ -63,8 +65,20 @@ export default function Home() {
             </p>
           </div>
           <div className="flex text-3xl justify-center gap-16 py-4">
-            <AiFillLinkedin className="dark:text-white md:text-6xl" />
-            <AiFillGithub className="dark:text-white md:text-6xl" />
+            <a
+              href="https://www.linkedin.com/in/lucianocerullo77/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin className="dark:text-white md:text-6xl" />
+            </a>
+            <a
+              href="https://www.github.com/lucianocerullo77"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub className="dark:text-white md:text-6xl" />
+            </a>
           </div>
           <div
             className="relative rounded-full mx-auto h-60 w-60 my-10
@@ -79,7 +93,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section>
+        <section className="py-32">
           <div>
             <h3 className="text-3xl text-center py-4 md:text-4xl dark:text-gray-200">
               About Me
@@ -95,10 +109,10 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl text-center py-2 dark:text-gray-200">
+            <h3 className="text-3xl text-center py-12 dark:text-gray-200">
               Services I Offer
             </h3>
-            <p className="py-2 text-center dark:text-gray-300">
+            <p className="text-md text-center py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
               This are the Technologies that I've Learned, most of them were
               used in Real Projects.{" "}
             </p>
@@ -165,12 +179,12 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl text-center py-2 dark:text-gray-200">
+            <h3 className="text-3xl text-center py-12 dark:text-gray-200">
               My Portfolio
             </h3>
             <p
-              className="text-md text-center py-2
-           leading-8 text-gray-800 dark:text-white"
+              className="text-md text-center py-12
+           leading-8 text-gray-800 dark:text-white md:text-xl"
             >
               Most of my Freelance Jobs were given from
               <span className="text-yellow-500 font-medium"> CoderHouse </span>
@@ -181,7 +195,7 @@ export default function Home() {
               in a real freelance job (
               <span className="font-medium">Twice!</span>).
             </p>
-            <p className="text-center text-xl dark:text-gray-300">
+            <p className="text-center text-xl py-12 dark:text-gray-300">
               This is some of my Projects :{" "}
             </p>
           </div>
@@ -201,6 +215,26 @@ export default function Home() {
                 This is another Freelance Job maded with ReactJs using Bootstrap
                 and also it was maded with a Team of 2 UX Designers and Another
                 ReactJs FrontEnd Developer.
+                <br />
+                Respository :
+                <a
+                  href="https://sweet-olivia-eight.vercel.app"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  Olivia.vercel
+                </a>
+                <br />
+                Demo :
+                <a
+                  href="https://github.com/JoaquinBruhn/sweet-olivia"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  Olivia.Github
+                </a>
               </p>
             </div>
             <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
@@ -234,7 +268,27 @@ export default function Home() {
               <p className="py-2">
                 My final project of the ReactJs Course. Using Hooks, styled
                 Componets, Firebase and Bootstrap. It´s a E-commerce with all
-                his functions
+                his functions.
+                <br />
+                Respository :
+                <a
+                  href="https://fennex-six.vercel.app"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  Fennex.vercel
+                </a>
+                <br />
+                Demo :
+                <a
+                  href="https://github.com/LucianoCerullo77/Fennex-FinalProject"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  Fennex.Github
+                </a>
               </p>
             </div>
             <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
@@ -268,7 +322,20 @@ export default function Home() {
               <p className="py-2">
                 My First Freelance Landing page maded with a team of 1 Designer
                 UX and another Web Developer. Using basic HTML and CSS, also we
-                use Bootstrap.{" "}
+                use Bootstrap.
+                <br />
+                Respository :
+                <span className="text-lg font-medium"> Not available</span>
+                <br />
+                Demo :
+                <a
+                  href="https://lolo-store.vercel.app"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  Lolo.vercel
+                </a>
               </p>
             </div>
             <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
@@ -289,55 +356,68 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
-          <h3 className="text-3xl text-center py-2 dark:text-gray-200">
+        <section className="min-h-screen">
+          <h3 className="text-4xl text-center py-2 dark:text-gray-200">
             Contact Me
           </h3>
-          <div className='relative rounded-full mx-auto h-60 w-60 my-10
+          <div
+            className="relative rounded-full mx-auto h-60 w-60 my-10
          bg-gradient-to-b overflow-hidden
-         md:h-96 md:w-96'>
-          <Image src={Contact}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-full"
-          />
+         md:h-96 md:w-96"
+          >
+            <Image
+              src={Contact}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+            />
           </div>
-          <p className="py-2 text-center dark:text-gray-300">
-            If you want to contact me, you can find me on
-            <span>
-              <a
-                className="font-medium text-blue-500"
-                href="https://www.linkedin.com/in/lucianocerullo77/"
-                target="_blank"
-              >
-                {" "}
-                LinkedIn
-              </a>
-            </span>
-            .
-            <br />
-            Send me an email at :
-            <span className="font-medium text-red-500">
-              {" "}
-              lucianonicolas10@gmail.com
-            </span>
-            <br />
-            Or you can find me on
-            <span>
-              <a
-              target="_blank"
-              className="font-medium text-gray-600"
-              href="https://github.com/LucianoCerullo77"
-              > Github</a>
-            </span>.
-            Thank you!
-          </p>
+          <div className="flex w-full justify-center items-center">
+            <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-indigo-500 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
+              <div className="flex flex-col space-y-8 justify-between">
+                <div>
+                  <h3 className="font-bold text-3xl tracking-wide">
+                    How to find me?
+                  </h3>
+                  <p className="pt-2 text-indigo-100 text-sm">
+                    If you want to contact me, you can find me on :
+                  </p>
+                </div>
+                <div className="flex flex-col space-y-6">
+                  <div className="inline-flex space-x-2 items-center w-60">
+                    <AiFillLinkedin className="text-2xl md:text-3xl" />
+                    <span>
+                      <a
+                        href="https://www.linkedin.com/in/lucianocerullo77"
+                        target="_blank"
+                      >
+                        LucianoCerullo77
+                      </a>
+                    </span>
+                  </div>
+                  <div className="inline-flex space-x-2 items-center">
+                    <HiOutlineMail className="text-2xl md:text-3xl" />
+                    <span>lucianonicolas10@gmail.com</span>
+                  </div>
+                  <div className="inline-flex space-x-2 items-center">
+                    <AiFillGithub className="text-2xl md:text-3xl" />
+                    <span>
+                      <a
+                        href="https://github.com/LucianoCerullo77"
+                        target="_blank"
+                      >
+                        LucianoCerullo77{" "}
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <footer>
           <div className="text-center sticky py-8 dark:text-gray-300">
-            <p >
-              Luciano Cerullo - FrontEnd Developer
-            </p>
+            <p>Luciano Cerullo - FrontEnd Developer</p>
           </div>
         </footer>
       </main>
