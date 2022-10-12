@@ -43,7 +43,6 @@ export default function Home() {
                   href="/LucianoCerulloResume.pdf"
                   alt='resume'
                   rel="noopener noreferrer"
-                  locale={false}
                   download
                   className="shadow-xl bg-gradient-to-r from-red-500 to-rose-600 
               text-white px-4 py-2 rounded-md ml-8 hover:animate-pulse"
@@ -63,8 +62,20 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300 animate-in slide-in-from-right-24 duration-1000 delay-750 hover:animate-pulse">
               Freelancer looking for better oportunities, based in Argentina!🌎.
             </p>
+            <div
+            className="relative rounded-full mx-auto h-60 w-60 my-10
+         bg-gradient-to-b from-red-600 overflow-hidden
+         md:h-96 md:w-96"
+          >
+            <Image
+              src={ProfilePic}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+            />
           </div>
-          <div className="flex text-3xl justify-center gap-16 py-4">
+          </div>
+          <div className="flex text-4xl justify-center gap-16 py-4">
             <a
               href="https://www.linkedin.com/in/lucianocerullo77/"
               target="_blank"
@@ -80,25 +91,15 @@ export default function Home() {
               <AiFillGithub className="dark:text-white md:text-6xl" />
             </a>
           </div>
-          <div
-            className="relative rounded-full mx-auto h-60 w-60 my-10
-         bg-gradient-to-b from-red-600 overflow-hidden
-         md:h-96 md:w-96"
-          >
-            <Image
-              src={ProfilePic}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-full"
-            />
-          </div>
         </section>
         <section className="py-32">
           <div>
-            <h3 className="text-3xl text-center py-4 md:text-4xl dark:text-gray-200">
+            <h3 className="text-3xl text-center py-4 md:text-4xl dark:text-gray-200 animate-pulse">
               About Me
             </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
+            <p className="text-md text-center py-2 leading-8 text-gray-800
+            hover:animate-pulse
+            md:text-xl dark:text-gray-300">
               I am a FrontEnd ReactJs Developer based in Argentina. I have a
               passion for learning new technologies and I am always looking for
               new opportunities. I've started learning about web development 1
@@ -109,15 +110,15 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl text-center py-12 dark:text-gray-200">
+            <h3 className="text-3xl text-center py-12 dark:text-gray-200 animate-pulse">
               Services I Offer
             </h3>
-            <p className="text-md text-center py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300">
+            <p className="text-md text-center py-2 leading-8 text-gray-800 md:text-xl dark:text-gray-300 hover:animate-pulse">
               This are the Technologies that I've Learned, most of them were
               used in Real Projects.{" "}
             </p>
             <div className="sm:grid grid-cols-3 gap-10">
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:animate-pulse">
                 <Image src={Front} />
                 <h3 className="text-2xl font-medium pt-8 pb-2">
                   FrontEnd Web Development
@@ -137,8 +138,9 @@ export default function Home() {
                 <p className="text-gray-600 py-1">Tailwind</p>
                 <p className="text-gray-600 py-1">Git</p>
                 <p className="text-gray-600 py-1">Github</p>
+                <p className="text-gray-600 py-1">Firebase</p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:animate-pulse">
                 <Image src={Ecommerce} />
                 <h3 className="text-2xl font-medium pt-8 pb-2">
                   E-commerce Websites
@@ -154,12 +156,11 @@ export default function Home() {
                 <p className="text-gray-600 py-1">JavaScript</p>
                 <p className="text-gray-600 py-1">ReactJs</p>
                 <p className="text-gray-600 py-1">Bootstrap</p>
-                <p className="text-gray-600 py-1">Tailwind</p>
                 <p className="text-gray-600 py-1">Git</p>
                 <p className="text-gray-600 py-1">Github</p>
                 <p className="text-gray-600 py-1">Firebase</p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:animate-pulse">
                 <Image src={WebDev} />
                 <h3 className="text-2xl font-medium pt-8 pb-2">
                   Custom WebSites
@@ -179,12 +180,12 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl text-center py-12 dark:text-gray-200">
+            <h3 className="text-3xl text-center py-12 dark:text-gray-200 animate-pulse">
               My Portfolio
             </h3>
             <p
               className="text-md text-center py-12
-           leading-8 text-gray-800 dark:text-white md:text-xl"
+           leading-8 text-gray-800 dark:text-white md:text-xl hover:animate-pulse"
             >
               Most of my Freelance Jobs were given from
               <span className="text-yellow-500 font-medium"> CoderHouse </span>
@@ -195,8 +196,8 @@ export default function Home() {
               in a real freelance job (
               <span className="font-medium">Twice!</span>).
             </p>
-            <p className="text-center text-xl py-12 dark:text-gray-300">
-              This is some of my Projects :{" "}
+            <p className="text-center text-xl font-medium py-12 dark:text-gray-300 hover:animate-pulse">
+              This is some of my Real Projects :{" "}
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-center">
@@ -208,7 +209,7 @@ export default function Home() {
                 layout="responsive"
                 src={Olivia}
               ></Image>
-              <h3 className="text-2xl font-medium pt-8 pb-2">
+              <h3 className="text-2xl font-medium pt-8 pb-2 hover:animate-pulse">
                 Sweet Olivia E-Commerce
               </h3>
               <p className="py-2">
@@ -245,7 +246,7 @@ export default function Home() {
                 layout="responsive"
                 src={Olivia2}
               ></Image>
-              <h3 className="text-2xl font-medum pt-8 pb2 text-red-600">
+              <h3 className="text-2xl font-medum pt-8 pb2 text-red-600 hover:animate-pulse">
                 Projects maded With :{" "}
               </h3>
               <p className="text-gray-600 py-1">HTML5</p>
@@ -254,7 +255,7 @@ export default function Home() {
               <p className="text-gray-600 py-1">ReactJs</p>
               <p className="text-gray-600 py-1">Bootstrap</p>
             </div>
-            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg ">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -262,7 +263,7 @@ export default function Home() {
                 layout="responsive"
                 src={Fennex}
               ></Image>
-              <h3 className="text-2xl font-medium pt-8 pb-2">
+              <h3 className="text-2xl font-medium pt-8 pb-2 hover:animate-pulse">
                 Fennex E-Commerce
               </h3>
               <p className="py-2">
@@ -299,7 +300,7 @@ export default function Home() {
                 layout="responsive"
                 src={Fennex2}
               ></Image>
-              <h4 className="py-4 text-red-600 text-2xl">
+              <h4 className="py-4 text-red-600 text-2xl hover:animate-pulse">
                 Projects maded With :{" "}
               </h4>
               <p className="text-gray-600 py-1">HTML5</p>
@@ -316,7 +317,7 @@ export default function Home() {
                 layout="responsive"
                 src={Lolo}
               ></Image>
-              <h3 className="text-2xl font-medium pt-8 pb-2">
+              <h3 className="text-2xl font-medium pt-8 pb-2 hover:animate-pulse">
                 Lolo Store Landing Page
               </h3>
               <p className="py-2">
@@ -347,7 +348,7 @@ export default function Home() {
                 layout="responsive"
                 src={Lolo2}
               ></Image>
-              <h4 className="py-4 text-red-600 text-2xl">
+              <h4 className="py-4 text-red-600 text-2xl hover:animate-pulse">
                 Projects maded With :{" "}
               </h4>
               <p className="text-gray-600 py-1">HTML5</p>
@@ -357,7 +358,7 @@ export default function Home() {
           </div>
         </section>
         <section className="min-h-screen">
-          <h3 className="text-4xl text-center py-2 dark:text-gray-200">
+          <h3 className="text-4xl text-center py-2 dark:text-gray-200 animate-pulse">
             Contact Me
           </h3>
           <div
@@ -373,10 +374,10 @@ export default function Home() {
             />
           </div>
           <div className="flex w-full justify-center items-center">
-            <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-indigo-500 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
+            <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-indigo-600 hover:bg-indigo-500 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
               <div className="flex flex-col space-y-8 justify-between">
                 <div>
-                  <h3 className="font-bold text-3xl tracking-wide">
+                  <h3 className="font-bold text-3xl tracking-wide hover:animate-pulse">
                     How to find me?
                   </h3>
                   <p className="pt-2 text-indigo-100 text-sm">
@@ -417,7 +418,7 @@ export default function Home() {
         </section>
         <footer>
           <div className="text-center sticky py-8 dark:text-gray-300">
-            <p>Luciano Cerullo - FrontEnd Developer</p>
+            <p>Luciano Cerullo - FrontEnd Developer. Thank you for passing by!</p>
           </div>
         </footer>
       </main>
