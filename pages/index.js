@@ -15,8 +15,8 @@ import Contact from "../public/contact.png";
 import WebDev from "../public/html.png";
 import Front from "../public/front.png";
 import Ecommerce from "../public/ecommerce.png";
-import ToDo1 from '../public/ToDo1.png';
-import ToDo2 from '../public/ToDo2.png';
+import ToDo1 from "../public/ToDo1.png";
+import ToDo2 from "../public/ToDo2.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -43,7 +43,7 @@ export default function Home() {
               <li>
                 <a
                   href="/LucianoCerulloResume.pdf"
-                  alt='resume'
+                  alt="resume"
                   rel="noopener noreferrer"
                   download
                   className="shadow-xl bg-gradient-to-r from-red-500 to-rose-600 
@@ -65,17 +65,17 @@ export default function Home() {
               Freelancer looking for better oportunities, based in Argentina!🌎.
             </p>
             <div
-            className="relative rounded-full mx-auto h-60 w-60 my-10
+              className="relative rounded-full mx-auto h-60 w-60 my-10
          bg-gradient-to-b from-red-600 overflow-hidden
          md:h-96 md:w-96"
-          >
-            <Image
-              src={ProfilePic}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-full"
-            />
-          </div>
+            >
+              <Image
+                src={ProfilePic}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+              />
+            </div>
           </div>
           <div className="flex text-4xl justify-center gap-16 py-4">
             <a
@@ -99,9 +99,11 @@ export default function Home() {
             <h3 className="text-3xl text-center py-4 md:text-4xl dark:text-gray-200 animate-pulse">
               About Me
             </h3>
-            <p className="text-md text-center py-2 leading-8 text-gray-800
+            <p
+              className="text-md text-center py-2 leading-8 text-gray-800
             hover:animate-pulse
-            md:text-xl dark:text-gray-300">
+            md:text-xl dark:text-gray-300"
+            >
               I am a FrontEnd ReactJs Developer based in Argentina. I have a
               passion for learning new technologies and I am always looking for
               new opportunities. I've started learning about web development 1
@@ -221,8 +223,7 @@ export default function Home() {
                 <br />
                 Respository :
                 <a
-                href="https://github.com/JoaquinBruhn/sweet-olivia"
-                  
+                  href="https://github.com/JoaquinBruhn/sweet-olivia"
                   target="_blank"
                   className="text-lg font-medium"
                 >
@@ -276,7 +277,7 @@ export default function Home() {
                 <br />
                 Respository :
                 <a
-                href="https://github.com/LucianoCerullo77/Fennex-FinalProject"
+                  href="https://github.com/LucianoCerullo77/Fennex-FinalProject"
                   target="_blank"
                   className="text-lg font-medium"
                 >
@@ -370,7 +371,8 @@ export default function Home() {
                 React To Do List
               </h3>
               <p className="py-2">
-                This is a simple To Do List that i've maded with ReactJs, Quite simple but funtional.
+                This is a simple To Do List that i've maded with ReactJs, Quite
+                simple but funtional.
                 <br />
                 Respository :
                 <a
@@ -471,7 +473,9 @@ export default function Home() {
         </section>
         <footer>
           <div className="text-center sticky py-8 dark:text-gray-300">
-            <p>Luciano Cerullo - FrontEnd Developer. Thank you for passing by!</p>
+            <p>
+              Luciano Cerullo - FrontEnd Developer. Thank you for passing by!
+            </p>
           </div>
         </footer>
       </main>
