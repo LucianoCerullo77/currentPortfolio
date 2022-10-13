@@ -15,6 +15,8 @@ import Contact from "../public/contact.png";
 import WebDev from "../public/html.png";
 import Front from "../public/front.png";
 import Ecommerce from "../public/ecommerce.png";
+import ToDo1 from '../public/ToDo1.png';
+import ToDo2 from '../public/ToDo2.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -219,22 +221,23 @@ export default function Home() {
                 <br />
                 Respository :
                 <a
-                  href="https://sweet-olivia-eight.vercel.app"
-                  target="_blank"
-                  className="text-lg font-medium"
-                >
-                  {" "}
-                  Olivia.vercel
-                </a>
-                <br />
-                Demo :
-                <a
-                  href="https://github.com/JoaquinBruhn/sweet-olivia"
+                href="https://github.com/JoaquinBruhn/sweet-olivia"
+                  
                   target="_blank"
                   className="text-lg font-medium"
                 >
                   {" "}
                   Olivia.Github
+                </a>
+                <br />
+                Demo :
+                <a
+                  href="https://sweet-olivia-eight.vercel.app"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  Olivia.Vercel
                 </a>
               </p>
             </div>
@@ -247,7 +250,7 @@ export default function Home() {
                 src={Olivia2}
               ></Image>
               <h3 className="text-2xl font-medum pt-8 pb2 text-red-600 hover:animate-pulse">
-                Projects maded With :{" "}
+                Project maded With :{" "}
               </h3>
               <p className="text-gray-600 py-1">HTML5</p>
               <p className="text-gray-600 py-1">CSS3</p>
@@ -273,22 +276,22 @@ export default function Home() {
                 <br />
                 Respository :
                 <a
-                  href="https://fennex-six.vercel.app"
-                  target="_blank"
-                  className="text-lg font-medium"
-                >
-                  {" "}
-                  Fennex.vercel
-                </a>
-                <br />
-                Demo :
-                <a
-                  href="https://github.com/LucianoCerullo77/Fennex-FinalProject"
+                href="https://github.com/LucianoCerullo77/Fennex-FinalProject"
                   target="_blank"
                   className="text-lg font-medium"
                 >
                   {" "}
                   Fennex.Github
+                </a>
+                <br />
+                Demo :
+                <a
+                  href="https://fennex-six.vercel.app"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  Fennex.Vercel
                 </a>
               </p>
             </div>
@@ -301,7 +304,7 @@ export default function Home() {
                 src={Fennex2}
               ></Image>
               <h4 className="py-4 text-red-600 text-2xl hover:animate-pulse">
-                Projects maded With :{" "}
+                Project maded With :{" "}
               </h4>
               <p className="text-gray-600 py-1">HTML5</p>
               <p className="text-gray-600 py-1">CSS3</p>
@@ -354,6 +357,56 @@ export default function Home() {
               <p className="text-gray-600 py-1">HTML5</p>
               <p className="text-gray-600 py-1">CSS3</p>
               <p className="text-gray-600 py-1">Bootstrap</p>
+            </div>
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={ToDo1}
+              ></Image>
+              <h3 className="text-2xl font-medium pt-8 pb-2 hover:animate-pulse">
+                React To Do List
+              </h3>
+              <p className="py-2">
+                This is a simple To Do List that i've maded with ReactJs, Quite simple but funtional.
+                <br />
+                Respository :
+                <a
+                  href="https://github.com/LucianoCerullo77/projectReactToDo"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  React.ToDo
+                </a>
+                <br />
+                Demo :
+                <a
+                  href="https://reacttodo-one.vercel.app"
+                  target="_blank"
+                  className="text-lg font-medium"
+                >
+                  {" "}
+                  React.ToDoDemo
+                </a>
+              </p>
+            </div>
+            <div className="basis-1/3 flex-1 dark:bg-white rounded-xl shadow-lg">
+              <Image
+                className="rounded-lg object-center"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={ToDo2}
+              ></Image>
+              <h3 className="text-2xl font-medum pt-8 pb2 text-red-600 hover:animate-pulse">
+                Project maded With :{" "}
+              </h3>
+              <p className="text-gray-600 py-1">ReactJs</p>
+              <p className="text-gray-600 py-1">Bootstrap</p>
+              <p className="text-gray-600 py-1">FontAwesome</p>
             </div>
           </div>
         </section>
