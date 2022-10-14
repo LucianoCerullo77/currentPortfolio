@@ -5,18 +5,18 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import Image from "next/image";
 import ProfilePic from "../public/profile.png";
-import Fennex from "../public/Fennex.png";
-import Fennex2 from "../public/Fennex2.png";
-import Olivia from "../public/Olivia1.png";
-import Olivia2 from "../public/Olivia2.png";
-import Lolo from "../public/Lolo1.png";
-import Lolo2 from "../public/Lolo2.png";
+import Fennex from "../public/fennex.png";
+import Fennex2 from "../public/fennex2.png";
+import Olivia from "../public/olivia1.png";
+import Olivia2 from "../public/olivia2.png";
+import Lolo from "../public/lolo1.png";
+import Lolo2 from "../public/lolo2.png";
 import Contact from "../public/contact.png";
 import WebDev from "../public/html.png";
 import Front from "../public/front.png";
 import Ecommerce from "../public/ecommerce.png";
-import ToDo1 from "../public/ToDo1.png";
-import ToDo2 from "../public/ToDo2.png";
+import ToDo1 from "../public/todo1.png";
+import ToDo2 from "../public/todo2.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
